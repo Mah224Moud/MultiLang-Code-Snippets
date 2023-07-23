@@ -13,8 +13,8 @@ Welcome to the captivating universe of "MultiLang-Code-Snippets"! 🚀
 ## Contribution Guidelines
 
 - Create a file in each folder corresponding to the languages in which you want to code. If the folder doesn't exist, create it before adding your file.
-  ###### For example :
-        If you want to code in `Python`, go to the `Python` folder and create your file. If you want to code in `Go`, check if the `Go` folder exists first, and if not, create it before adding your program file.
+  ##### For example :
+  If you want to code in `Python`, go to the `Python` folder and create your file. If you want to code in `Go`, check if the `Go` folder exists first, and if not, create it before adding your program file.
 - Remember to thoroughly document your code for clarity and understanding.
 - Introduce new programs that are not already present in the repository.
 - Before submitting a Pull Request (PR), run the program and ensure there are no errors.
