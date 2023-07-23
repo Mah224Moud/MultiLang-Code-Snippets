@@ -1,4 +1,4 @@
-# Welcome "MultiLang-Code-Snippets"
+# Welcome to "MultiLang-Code-Snippets"
 
 "MultiLang-Code-Snippets" is an engaging open-source repository that brings together a wealth of small code snippets in various programming languages. Whether you're an enthusiastic beginner eager to learn or an experienced developer seeking to explore new horizons, this repository is designed to provide you with an immersive experience into the diversity of the coding world.
 
