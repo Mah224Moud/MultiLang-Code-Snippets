@@ -37,7 +37,6 @@ void findNextDate(int day, int month, int year) {
             year++;
         }
     }
-
     printf("The next date is: %02d/%02d/%d\n", day, month, year);
 }
 
