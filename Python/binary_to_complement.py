@@ -25,7 +25,7 @@ def binary_to_complement(binary: int) -> dict:
     }
 
 
-def mai():
+def main():
     binary = int(input("Enter a binary number: "))
     result = binary_to_complement(binary)
     print(f"\n\nOriginal binary:   {''.join(result['original'])}")
@@ -33,4 +33,4 @@ def mai():
 
 
 if __name__ == "__main__":
-    mai()
+    main()
