@@ -4,9 +4,9 @@
  * @param {string} email - The email to be validated.
  * @return {boolean} Returns true if the email is valid, otherwise false.
  */
-function is_valid(email){
-    let pattern = new RegExp("^[a-z][a-z\\d\\-\\.]{5,}[a-z\\d]@[a-z\\-]+[a-z\\d]{2,}\\.[a-z]{2,}$");
-    return email.match(pattern) && !email.includes("..");
+function is_valid(email) {
+    let pattern = new RegExp("^[a-z][a-z0-9_%+-]*(\\.[a-z0-9_%+-]+)*@[a-z0-9.-]+\\.[a-z]{2,}$");
+    return pattern.test(email);
 }
 
 let emails = [
