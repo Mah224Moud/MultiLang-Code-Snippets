@@ -1,5 +1,15 @@
 def fast_exponentiation(number: int, power: int, modulo: int):
-    output = 1
+    """
+        Calculates the result of raising a number to a power and taking the modulo of the result.
+
+        Args:
+            number (int): The number to be raised to a power.
+            power (int): The power to which the number should be raised.
+            modulo (int): The modulo value.
+
+        Returns:
+            int: The result of raising the number to the power and taking the modulo of the result.
+    """
     while power > 0:
         right = ""
         if (power % 2):
