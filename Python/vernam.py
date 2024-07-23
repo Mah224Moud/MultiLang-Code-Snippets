@@ -33,14 +33,28 @@ def is_aphabet(text: str) -> bool:
 
 def vernam(text: str, key: str, encode: bool = False) -> str:
     """
-    Decodes a text using the Vernam cipher algorithm for the given text and key.
+    Decodes or encodes a text using the Vernam cipher algorithm for the given text and key.
 
     Parameters:
         text (str): The text to be encrypted.
         key (str): The key used for encryption.
+        encode (bool, optional): Whether to encode or decode the text. Defaults to False.
 
     Returns:
         str: The decoded text.
+
+    Example usage:
+    ```
+    text = "DSCWR"
+    key = "WORLD"
+    decoded_text = vernam(text, key)
+    print(decoded_text)  # Output: "HELLO"
+
+    text = "HELLO"
+    key = "WORLD"
+    encoded_text = vernam(text, key, encode=True)
+    print(encoded_text)  # Output: "DSCWR"
+    ```
     """
     decalage = 65
     result = ""
@@ -63,12 +77,12 @@ def vernam(text: str, key: str, encode: bool = False) -> str:
 
 
 def main():
-    text = "Hello"
-    key = "WMCKL"
+    text = "HELLO WORLD"
+    key = generate_random_key(len(text)).upper()
 
-    encode = vernam(text, key, True)
+    encode = vernam(text, key, encode=True)
 
-    print(f"{text} encoded with {key} using VERNAM cipher = {encode}")
+    print(f"'{text}' encoded with '{key}' using VERNAM cipher = '{encode}'")
 
 
 if __name__ == "__main__":
