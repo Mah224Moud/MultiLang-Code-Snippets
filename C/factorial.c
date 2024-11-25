@@ -20,7 +20,7 @@ int main()
 long int factorial(int number)
 {
 
-    if (number == 1 || number == 0)
+    if (number <= 1)
     {
         return 1;
     }
