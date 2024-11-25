@@ -19,13 +19,15 @@ int main()
  */
 long int factorial(int number)
 {
+				if(number < 0){
+								printf("Not defined");
+								exit(1);
+				}
 
-    if (number <= 1)
+    if (number == 0 || number == 1)
     {
         return 1;
     }
-    else
-    {
-        return number * factorial(number - 1);
-    }
+
+    return number * factorial(number - 1);
 }
