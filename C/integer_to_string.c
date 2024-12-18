@@ -79,3 +79,9 @@ char	*integer_to_string(int n)
 	return (res);
 }
 
+int     main(void)
+{
+     __builtin_printf("The result is a string value : %s\n", integer_to_string(-2024));
+	// Output The result is a string value : -2024
+	return (0);
+}
