@@ -35,3 +35,9 @@ int	ft_string_to_int(char *str)
 	return (res * sign);
 }
 
+int	main(void)
+{
+	__builtin_printf("The result is an int value : %i\n", ft_string_to_int("   -2024"));
+	// Output "The result is an int value : -2024
+	return (0);
+}
