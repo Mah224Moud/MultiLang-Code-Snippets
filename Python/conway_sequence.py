@@ -51,3 +51,58 @@ def conway_term(n: int) -> str:
         return "1"
     else:
         return read_and_say(conway_term(n - 1))
+
+def display_conway(n: int) -> None:
+    """
+    Recursively print the first n terms of Conway's Look-and-Say sequence.
+
+    Args:
+        n (int): The number of terms to print.
+
+    Returns:
+        None
+
+    Examples:
+        >>> display_conway(1)
+        1
+        >>> display_conway(3)
+        1
+        11
+        21
+        
+    """
+    if n == 1:
+        print("1")
+    else:
+        display_conway(n - 1)
+        print(conway_term(n))
+
+def main() -> None:
+    """
+    Main function to execute the program.
+
+    Prompts the user to enter the number of terms to display
+    and prints the Conway sequence up to that term.
+
+    Returns:
+        None
+
+    Examples:
+        >>> # user inputs 2
+        Enter the number of terms to display: 2
+        1
+        11
+        >>> # user inputs 4
+        Enter the number of terms to display: 4
+        1
+        11
+        21
+        1211
+        
+    """
+    n = int(input("Enter the number of terms to display: "))
+    display_conway(n)
+
+
+if __name__ == "__main__":
+    main()
